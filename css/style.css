@@ -41,3 +41,7 @@ h1{
 .card-container .strong{
     text-align: center;
 }
+
+nav {
+    font-size: 20px;
+}
