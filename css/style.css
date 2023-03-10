@@ -3,13 +3,17 @@ body{
     background-color: pink;
     font-size: 25px;
 }
-h1{
+
+.title{
+    width: 100%;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .card-container{
-    width: 100%;
+    background-color: beige;
+    display:block;
+    justify-content: space-between;
 }
 
 .card-container .card-blue{
@@ -43,4 +47,332 @@ h1{
 
 nav {
     font-size: 20px;
+}
+
+.head-cont{
+    font-size: 24px;
+    width: auto;
+    height: auto;
+}
+
+.flex-primary{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    background-color: whitesmoke;
+    color: black;
+    width: 660px;
+    height: 1300px;
+    grid-template-columns: 150px 150px 150px 150px;
+    padding: 20px;
+    gap: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.grid-container > div{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.grid-head{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item{
+    width: auto;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.grid-box1{
+    background-color: rgb(155, 220, 155);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.grid-box2{
+    background-color: rgb(84, 194, 225);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-box3{
+    background-color: rgb(214, 220, 22);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.grid-box4{
+    background-color: burlywood;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid-box5{
+    background-color: orange;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.grid-box6{
+    background-color: red;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.grid-box7{
+    background-color: teal;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.grid-box8{
+    background-color: palevioletred;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.grid-box9{
+    background-color: tomato;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.grid-box10{
+    background-color:aqua;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    width: 660px;
+    height: 1300px;
+    padding: 20px;
+    gap: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.flex-container div{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.flex-head{
+    width: 100%;
+    height: 19%;
+}
+
+.sub-cont1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 52%;
+    gap: 20px;
+}
+
+.sub-cont2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 24%;
+    gap: 20px;
+}
+
+.sub-cont3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+
+.sub-cont4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+
+.sub-cont5{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    gap: 20px;
+}
+
+.sub-cont6{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 75%;
+    gap: 20px;
+}
+
+.sub-cont7{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+
+.sub-cont8{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+
+.sub-cont9{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.sub-cont10{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 77%;
+    height: 100%;
+    gap: 20px;
+}
+
+.sub-cont11{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 23%;
+    height: 100%;
+    gap: 20px;
+}
+
+.sub-cont12{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.flex-item{
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.flex-box1{
+    width: 100%;
+    height:100%;
+    background-color: rgb(155, 220, 155);
+}
+
+.flex-box2{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+}
+
+.flex-box3{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(84, 194, 225);
+}
+
+.flex-box4{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(214, 220, 22);
+}
+
+.flex-box5{
+    width: 100%;
+    height: 50%;
+    background-color: red; 
+}
+
+.flex-box6{
+    width: 100%;
+    height: 50%;
+    background-color:  burlywood;
+}
+
+.flex-box7{
+    width: 100%;
+    height: 100%;
+    background-color: teal;
+}
+
+.flex-box8{    
+    width: 100%;
+    height: 100%;
+    background-color: palevioletred;
+}
+
+.flex-box9{    
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+}
+
+.flex-box10{    
+    width: 100%;
+    height: 100%;
+    background-color:aqua;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
 }
