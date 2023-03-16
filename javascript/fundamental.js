@@ -39,25 +39,25 @@ console.log(e, typeof e);
 console.log(f, typeof f);
 console.log(g, typeof g);
 console.log(h, typeof h);
-let gvalue = String(g)
-alert("Tipe data JavaScript" + "\na = " + a + " , tipe data " + typeof a + "\nb = " + b + " , tipe data " + typeof b + "\nc = " + c +" , tipe data " + typeof c + "\nd = " + d +" , tipe data " + typeof d + "\ne = " + e +" , tipe data " + typeof e + "\nf = " + f +" , tipe data " + typeof f + "\ng = " + gvalue + " , tipe data " + typeof g + "\nh = " + h +" , tipe data " + typeof h);
+let nilaig = String(g)
+alert("Tipe data JavaScript" + "\na = " + a + " , tipe data " + typeof a + "\nb = " + b + " , tipe data " + typeof b + "\nc = " + c +" , tipe data " + typeof c + "\nd = " + d +" , tipe data " + typeof d + "\ne = " + e +" , tipe data " + typeof e + "\nf = " + f +" , tipe data " + typeof f + "\ng = " + nilaig + " , tipe data " + typeof g + "\nh = " + h +" , tipe data " + typeof h);
 
 // Konversi Tipe Data
 console.log("~~Konversi Tipe Data~~")
-let value1 = false;
-value2 = String(value1);
-console.log(value2, typeof value2);
+let nilai1 = false;
+nilai2 = String(nilai1);
+console.log(nilai2, typeof nilai2);
 console.log("6" / "2");
-let value3 = ("6" / "2");
+let nilai3 = ("6" / "2");
 let str = "123";
-console.log("str bertipe ", typeof str, " dengan value : ", str);
+console.log("str bertipe ", typeof str, " dengan nilai : ", str);
 let num = Number(str);
 console.log("num bertipe ", typeof num);
 console.log(Boolean(1));
 console.log(Boolean(0));
 console.log(Boolean("hello"));
 console.log(Boolean(""));
-alert("Konversi Tipe Data \nvalue1 = " + value1 + " bertipe " + typeof value1 + " menjadi value2 = " + value2 + " bertipe " + typeof value2 + "\n('6'/'2') menghasilkan nilai " + value3 +"\nstr = '123' bertipe " + typeof str + " menjadi bernilai " + num + " bertipe " + typeof num + "\nBoolean(1) dan Boolean('hello) sama-sama bernilai " + Boolean('hello') + " bertipe " + typeof Boolean('hello') + "\nBoolean(0) dan Boolean('') sama-sama bernilai " + Boolean('') + " bertipe " + typeof Boolean(''));
+alert("Konversi Tipe Data \nnilai1 = " + nilai1 + " bertipe " + typeof nilai1 + " menjadi nilai2 = " + nilai2 + " bertipe " + typeof nilai2 + "\n('6'/'2') menghasilkan nilai " + nilai3 +"\nstr = '123' bertipe " + typeof str + " menjadi bernilai " + num + " bertipe " + typeof num + "\nBoolean(1) dan Boolean('hello) sama-sama bernilai " + Boolean('hello') + " bertipe " + typeof Boolean('hello') + "\nBoolean(0) dan Boolean('') sama-sama bernilai " + Boolean('') + " bertipe " + typeof Boolean(''));
 
 // Operator Aritmatika
 console.log("~~Operator Aritmatika~~");
