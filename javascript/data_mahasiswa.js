@@ -1000,3 +1000,73 @@ let mahasiswa = [
   { id: 998, name: "Blythe Motsinger", gender: "F", score: 61 },
   { id: 999, name: "Christeen Paris", gender: "M", score: 82 },
 ];
+
+alert("Silahkan Cek Bagian Console!")
+
+//Female
+let femaleStudents = mahasiswa.filter((mahasiswa) => mahasiswa.gender === "F");
+let femaleCount = femaleStudents.length;
+console.log("Jumlah Cewek : " + femaleCount);
+
+let nilaicewe = femaleStudents.map(Object => Object.score);
+
+let totalnilaicewe = 0;
+for(let i=0; i<nilaicewe.length; i++){
+  totalnilaicewe = totalnilaicewe + nilaicewe[i];
+}
+console.log("total nilai cewe : " + totalnilaicewe);
+let femaleAverage = totalnilaicewe / femaleCount;
+console.log("Rata2 Cewek : " + femaleAverage);
+
+let femaleMax = Math.max.apply(Math, nilaicewe);
+console.log("Max : " + femaleMax)
+
+let femaleMin = Math.min.apply(Math, nilaicewe);
+console.log("Min : " + femaleMin)
+
+
+//Male
+let maleStudents = mahasiswa.filter((mahasiswa) => mahasiswa.gender === "M");
+let maleCount = maleStudents.length;
+console.log("Jumlah Cowok : " + maleCount);
+
+let nilaicowo = maleStudents.map(Object => Object.score);
+
+let totalnilaicowo = 0;
+for( let i=0; i<nilaicowo.length; i++){
+  totalnilaicowo = totalnilaicowo + nilaicowo[i];
+}
+console.log("total nilai cowo : " + totalnilaicowo);
+let maleAverage = totalnilaicowo / maleCount;
+console.log("Rata2 Cowok : " + maleAverage);
+
+let maleMax = Math.max.apply(Math, nilaicowo);
+console.log("Max : " + maleMax)
+
+let maleMin = Math.min.apply(Math, nilaicowo);
+console.log("Min : " + maleMin)
+
+//Object Hasil
+let maping ={
+  female : {
+    count : femaleCount,
+    score : {
+      average : femaleAverage,
+      max : femaleMax,
+      min : femaleMin
+    },
+    students : femaleStudents
+  },
+  male : {
+    count : maleCount,
+    score : {
+      average : maleAverage,
+      max : maleMax,
+      min : maleMin
+    },
+    students : maleStudents
+  }
+};
+
+console.log("Object Maping : ")
+console.log(maping);
