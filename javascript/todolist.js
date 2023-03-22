@@ -28,6 +28,24 @@ function addTodo(event) {
     todoDiv.appendChild(trashButton);
     
     todoList.appendChild(todoDiv);
+    
+    let objtodo = {
+        todolist : todoInput.value
+    };
+
+    let fetchAdd = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({objtodo})
+    };
+    fetch(
+        "https://crudcrud.com/api/e4de2e081f0548258510707c3e70d218/todos", fetchAdd
+    )
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+
     todoInput.value = "";
 }
 
@@ -97,7 +115,6 @@ function removeLocalTodos(todo) {
     } else {
         todos = JSON.parse(localStorage.getItem("todos"));
     }
-
     const todoIndex = todo.children[0].innerText;
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem("todos", JSON.stringify(todos));
