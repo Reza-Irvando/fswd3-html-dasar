@@ -1,0 +1,213 @@
+body{
+    background: white;
+    color: black;
+    width: 100%;
+    margin: 0;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: white;
+    color: black;
+}
+
+.nav-kiri{
+    width: 76%;
+}
+
+.nav-item{
+    border: 3px solid black;
+}
+
+.blogku{
+    width:70px;
+    padding: 10px;
+    text-align: center;
+}
+
+.kanan{
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: pink;
+    padding-bottom: 10px;
+}
+
+.title , .deskripsi{
+    width: 100%;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+}
+
+.card-item{
+    background:#fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 1em;
+    width: 32%;
+}
+
+.card-image{
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card-content{
+    padding: 0px;
+    margin: 10px;
+    width: 100%;
+}
+
+.card-title, .card-text{
+    color: black;
+}
+
+.flex-utama{
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+    color: black;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.flex-sub1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    color: black;
+}
+
+.sub1-title{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.flex-sub2{
+    width: 20%;
+    padding: 10px;
+}
+
+.terkait{
+    margin-bottom: 20px;
+}
+
+li{
+    margin-top: 20px;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-item{
+    width:100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-image{
+    width:100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media screen and (max-width:600px){
+    body{
+        width: 100%;
+    }
+
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        margin:0;
+    }
+
+    .nav-kiri{
+        width: auto;
+    }
+    
+    .nav-item{
+        border: 3px solid black;
+        text-align: center;
+        width: auto;
+        padding: 10px;
+    }
+
+    .flex-utama{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        width: auto;
+        height: auto;
+    }
+    
+    .flex-sub1{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        color: black;
+    }
+    
+    .flex-sub2{
+        width: auto;
+    }
+
+    .container-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .card-item{
+        width:auto;
+    }
+
+    .card-image{
+        width:100%;
+    }
+
+    .card-text{
+        display: none;
+    }
+}
