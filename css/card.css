@@ -1,7 +1,7 @@
 body{
     background: white;
     color: black;
-    width: 100%;
+    width: auto;
     margin: 0;
 }
 
@@ -38,51 +38,17 @@ body{
 
 header{
     display: flex;
-    width: 100%;
+    width: auto;
     height: auto;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: pink;
+    background-color: rgb(225, 255, 180);
     padding-bottom: 10px;
 }
 
 .title , .deskripsi{
-    width: 100%;
-}
-
-.container-card{
-    display: flex;
-    flex-direction: row;
     width: auto;
-    justify-content: space-between;
-}
-
-.card-item{
-    background:#fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #ccc;
-    padding: 1em;
-    width: 32%;
-}
-
-.card-image{
-    width: 100%;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.card-content{
-    padding: 0px;
-    margin: 10px;
-    width: 100%;
-}
-
-.card-title, .card-text{
-    color: black;
 }
 
 .flex-utama{
@@ -90,7 +56,7 @@ header{
     flex-direction: row;
     background-color: beige;
     color: black;
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 20px;
     gap: 20px;
@@ -110,8 +76,48 @@ header{
     margin-bottom: 10px;
 }
 
+.container-card{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-item{
+    background:#fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 1em;
+    width: 32%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-image{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-content{
+    padding: 0px;
+    margin: 10px;
+    width: 100%;
+}
+
+.card-title, .card-text{
+    color: black;
+}
+
 .flex-sub2{
-    width: 20%;
+    width: auto;
     padding: 10px;
 }
 
@@ -121,31 +127,6 @@ header{
 
 li{
     margin-top: 20px;
-}
-
-.container-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.card-item{
-    width:100%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.card-image{
-    width:100%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 @media screen and (max-width:600px){
@@ -196,7 +177,6 @@ li{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 20px;
     }
 
     .card-item{
