@@ -1,0 +1,12 @@
+@media screen and (max-width:810px){
+    #flex-down{
+        display: flex;
+        flex-direction: column;
+    }
+    #jadi-kolom1{
+        width: auto;
+    }
+    #jadi-kolom2{
+        width: auto;
+    }
+}
